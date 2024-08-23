@@ -3,8 +3,8 @@ const employees =  [{ id: 4, name: 'Samantha Lee', age: 24, contact: '+1 555-456
 
 // Function to sort employees by age
 function sortEmployeesByAge() {
-    const sortedEmployees = employees.sort((a, b) => a.age - b.age);
-    console.log(sortedEmployees);
+    
+    console.log(employees.sort((a, b) => a.age - b.age););
 }
 
 // Call the function to sort and log employees
