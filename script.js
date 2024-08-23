@@ -1,4 +1,4 @@
-//your JS code here. If required.
+// Assuming the JSON data is already available as a variable
 const employees = [
     {"id":1,"name":"John Smith","age":35,"contact":"+1 555-1234","zip":"10001"},
     {"id":2,"name":"Jane Doe","age":28,"contact":"+1 555-2345","zip":"10002"},
@@ -18,8 +18,11 @@ const employees = [
     {"id":16,"name":"Erica Chen","age":28,"contact":"+1 555-6789","zip":"10016"}
 ];
 
-// Sort the employees by age in ascending order
-employees.sort((a, b) => a.age - b.age);
+// Function to sort employees by age
+function sortEmployeesByAge() {
+    const sortedEmployees = employees.sort((a, b) => a.age - b.age);
+    console.log(sortedEmployees);
+}
 
-// Log the sorted list of employees to the console
-console.log(employees);
+// Call the function to sort and log employees
+sortEmployeesByAge();
